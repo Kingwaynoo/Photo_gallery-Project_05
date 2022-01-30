@@ -1,40 +1,47 @@
 
 
 
-.main_wrapper {
-  max-width: 1200px;
-  width: 95vw;
-  margin-left: auto;
-  margin-right: auto;
+
+.search {
+  border: 2px solid rgb(22, 174, 201);
+  display: block;
+  margin: 25px auto;
+  padding: 15px;
+  border-radius: 5px;
+  width: 35vw;
 }
 
-header {
-  position: relative;
-  height: 200px;
-  display: grid;
+
+
+.container, #gallery  {
+  margin: 0 auto;
 }
-header input {
-  height: 80px;
-  padding-left: 32px;
-  padding-right: 32px;
-  
+
+.container {
+  max-width: 1024px;
+}
+
+a:-webkit-any-link {
+  display: block;
   margin: auto;
-  font-size: 16px;
- 
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 
 
 #gallery {
+  max-width: 880px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-gap: 25px;
-  width: 95%;
-  max-width: 1200px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, 1fr);
+  place-content: center; 
 }
+
+a[href^="images"]{
+  place-self: center;
+}
+
+
 
 
 
